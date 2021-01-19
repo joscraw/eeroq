@@ -124,13 +124,17 @@
   });
 
   function php_email_form_submit(this_form, action, data) {
+    debugger;
     $.ajax({
+      headers: {          
+        Accept: "application/json"
+      },
       type: "POST",
       url: action,
       data: data,
       timeout: 40000
     }).done( function(msg){
-      if (msg.trim() == 'OK') {
+      if (msg.ok == true) {
         this_form.find('.loading').slideUp();
         this_form.find('.sent-message').slideDown();
         this_form.find("input:not(input[type=submit]), textarea").val('');

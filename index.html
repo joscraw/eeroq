@@ -48,6 +48,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active-start"><a href="index.html">Start</a></li>
+          <li class="active-start2" style="display: none;"><a href="index.html">Start</a></li>
           <li><a href="#about">How It Works</a></li>
           <li><a href="#mission-statement">Mission Statement</a></li>
           <li><a href="#team">Our Team</a></li>
@@ -67,7 +68,7 @@
           <br>
           <button class="button--state-secondary"><a href="#team">Contact Us</a></button>
         </div>
-        <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center hero--right" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 content d-flex flex-column justify-content-center hero--right" data-aos="fade-up" data-aos-delay="100">
           
         </div>
       </div>
@@ -386,7 +387,6 @@
 
     <!-- ======= Contact Section ======= -->
 
-    <!--
     <section id="contact" class="contact">
       <div class="container-fluid" data-aos="fade-up">
 
@@ -395,7 +395,12 @@
             <div class="join-newsletter">
               <h4>Join Our Newsletter</h4>
               <p>Join 50,000 subscribers worldwide and receive great news first!</p>
-              <form action="" method="post">
+              <form action="https://formspree.io/f/mrgojebj" method="post" class="php-email-form">
+                <div class="mb-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your are now registered for our newsletter. Thank you!</div>
+                </div>
                 <div id="email">
                   <input type="email" name="email" placeholder="email">
                 </div>
@@ -406,8 +411,8 @@
             </div>
           </div>
 
-          <div class="col-lg-6 contact-us" style="padding: 0">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form" style="height: 100%;">
+          <div class="col-lg-6 contact-us" style="padding-left: 10px padding-right: 10px;">
+            <form action="https://formspree.io/f/mvovlzgv" method="post" role="form" class="php-email-form" style="height: 100%;">
               <div class="form-row">
                 <div class="col form-group">
                   <input type="text" name="fullName" class="form-control" id="name" placeholder="Full Name" data-rule="minlen:4" data-msg="Please enter your full name" />
@@ -435,8 +440,6 @@
 
       </div>
     </section>
-
-  -->
 
   </main><!-- End #main -->
 

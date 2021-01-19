@@ -164,7 +164,6 @@ h1, h2, h3, h4, h5, h6 {
 .button--state-primary {
   background-color: #F89720;
   font-family:Poppins-Regular;
-  padding: 10px 0 10px 10px !important;
   margin-left: 28px;
 }
 
@@ -508,6 +507,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 70px 70px;
 }
 
+
 .hero--right {
   padding-top: 200px;
   background-image: url(../img/hero/circuit.png), url(../img/hero/orange-dots.png), url(../img/hero/orange-quarter.png), url(../img/hero/orange-quarter.png);
@@ -609,6 +609,128 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 992px) {
+
+  .form-row>.col, .form-row>[class*=col-] {
+    flex-basis: initial;
+  }
+  .member {
+    width: 100%;
+  }
+
+  .member img {
+    width: 100%;
+  }
+
+  .active-start {
+    display: none;
+  }
+
+  .active-start2 {
+    background-color:#5C83FC;
+    position: relative;
+    display: block !important;
+  }
+  
+  .active-start2 > a {
+    color: #FFFFFF !important;
+  }
+  
+  .active-start2:before {
+    content:"";
+    background-color:#5C83FC;
+    position: absolute;
+    bottom: 40px;
+    height: 1000px;
+    width: 100%;
+  }
+  
+
+  .main {
+    padding-top: 50px;
+  }
+
+  .hero--left .button--state-secondary {
+    margin-top: 0;
+  }
+
+  .hero--left {
+    background: initial;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+    height: 300px;
+    margin-top: 150px;
+    text-align: center;
+  }
+
+  .hero--right {
+    height: 450px;
+    background-image: url(../img/hero/circuit.png), url(../img/hero/orange-dots.png) !important;
+    background-position: center, center -150px !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-size: 450px 450px, 250px 250px !important;
+  }
+
+  #hero {
+    background: initial;
+
+    background-image: url(../img/hero/gray-quarter.png), url(../img/hero/orange-quarter-large.png), url(../img/hero/orange-sun.png);
+    background-position: 70px 250px, 0px 790px, right 640px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 70px 70px, 150px 150px, 300px 300px;
+  }
+
+  .active-start {
+    padding: initial !important;
+  }
+  
+  .active-start > a {
+    padding-left: initial !important;
+    padding-right: initial !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero--left {
+    height: 100px;
+    margin-top: 100px;
+
+  }
+
+  .hero--right {
+    height: 300px;
+  }
+
+  #hero {
+    background: initial;
+    height: 130vh !important;
+    background-image: url(../img/hero/gray-quarter.png), url(../img/hero/orange-quarter-large.png), url(../img/hero/orange-sun.png);
+    background-position: 20px 300px, 0px 790px, right 640px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 70px 70px, 150px 150px, 300px 300px;
+  }
+
+  .hero--right {
+    height: 450px;
+    margin-top: 150px;
+    background-image: url(../img/hero/circuit.png), url(../img/hero/orange-dots.png) !important;
+    background-position: center, center -150px !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-size: 450px 450px, 250px 250px !important;
+  }
+}
+
+.mobile-nav .button--state-primary a {
+  width: auto;
+  padding: 10px 20px;
+}
+
+.mobile-nav .active-start a {
+  width: auto;
+  padding: 10px 20px;
+}
+  
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -671,6 +793,19 @@ section {
   .breadcrumbs {
     margin-top: 58px;
   }
+  .contact-us {
+    margin-top: 50px;
+    min-height: initial !important;
+  }
+  .contact {
+    padding: 0;
+  }
+  
+}
+
+.contact-us button {
+  width: 100%;
+  margin-left: 0;
 }
 
 .breadcrumbs h2 {
@@ -1006,7 +1141,13 @@ section {
 .join-newsletter #email {
   float: left;
   height: 50px;
+  border: none;
 }
+
+.join-newsletter #email input {
+  border: none;
+}
+
 
 div#submitForm button {
   background: url("../img/envelope.png") no-repeat scroll 0 0 transparent;
@@ -1014,13 +1155,10 @@ div#submitForm button {
   background-position: center;
   cursor: pointer;
   font-weight: bold;
-  height: 20px;
   padding-bottom: 2px;
-  width: 50px;
   background-color:#5C83FC;
   height: 50px;
   border: none;
-  
 }
 
 .contact-us {
@@ -1672,7 +1810,8 @@ div#submitForm button {
 
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
-  padding: 30px;
+  padding: initial;
+  box-shadow: initial;
 }
 
 .contact .php-email-form .validate {
@@ -1965,3 +2104,9 @@ div#submitForm button {
     padding: 2px 0;
   }
 }
+
+
+
+
+
+
